@@ -48,7 +48,6 @@
         function colorchange() {
             let input = document.getElementById("inputText");
             let colorInput = document.getElementById("textColor");
-            console.log(colorInput.value)
             input.style.color = colorInput.value;
         }
         function toggleDarkMode() {
