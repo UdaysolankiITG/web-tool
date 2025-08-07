@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Manipulation Web Tool Using HTML, CSS, and JavaScript</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Web Tool </h1><span><button class="b1" onclick="toggleDarkMode()">Dark Mode</button></span>
+        <label> Yahan Text Likho:</label><br>
+        <textarea id="inputText" placeholder="Yahan kuch likho..."></textarea>
+        <div class="options">
+            <input type="checkbox" id="italic"> Italic<br>
+            <input type="checkbox" id="uppercase"> UPPERCASE<br>
+            <input type="checkbox" id="lowercase"> lowercase<br>
+            <input type="checkbox" id="capitalize"> Capitalize First Letters<br>
+            <input type="checkbox" id="bold"> Bold<br>
+            <input onchange="colorchange()" type="color" id="textColor">:Select Color
+        </div>
+        <h3> Word preview :</h3>
+        <div id="output"></div>
+        <div class="bmain">
+            <button class="button" onclick="applyChanges()">Apply</button>
+            <button class="button" onclick="clearItems()">Reset</button>
+        </div>
+    </div>
+   <script src="index.js"></script>
+</body>
+</html>
